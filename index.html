@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AFM Counting Tool</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="index.css">
+        <script src="canvas_interaction_client.js" defer></script>
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>AFM Counting Tool</h1>
+        </header>
+        <section>
+            <canvas id="canvas" width="1000" height="1000"></canvas>
+            <div id="sidebar">
+                <h2>Settings</h2>
+                <hr>
+                Select AFM Image: <input id="file" type="file" accept=".jpg,.png"></input><br>
+                Invert Movement Controls: <input type="checkbox" id="invert">
+                
+                <h2>Data</h2>
+                <hr>
+                <div id="full">Full: 0</div>
+                <div id="flawed">Flawed: 0</div>
+                <div id="defected">Defected: 0</div>
+                
+                <h2>Controls</h2>
+                <hr>
+                WASD to pan the camera<br>
+                Q and E to zoom in and out<br>
+                <h3>Markers</h3>
+                Move your mouse over the origami you would like to mark, then mark it with one of the following options:
+                <ul>
+                    <li>Full: Left Click or 1 Key</li>
+                    <li>Flawed: Middle Click or 2 Key</li>
+                    <li>Defected: Right Click or 3 Key</li>
+                </ul>
+            </div>
+        </section>
+    </body>
+</html>
